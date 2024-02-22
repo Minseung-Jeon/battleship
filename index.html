@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPS 630_lab1</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info-container">
+        <div>
+          <p>Turn: <span id="turn-display"></span></p>
+          <p>Info: <span id="info"></span></p>
+          <p>Number of Hit: <span id="hit-count"></span></p>
+          <p>Number of Miss: <span id="miss-count"></span></p>
+        </div>
+
+        <div>
+          <button id="flip-button">FLIP!</button><br />
+          <button id="start-button">START!</button>
+        </div>
+      </div>
+      <div class="ocean" id="ocean"></div>
+      <div class="ship-container" id="ship-container">
+        <div id="0" class="destroyer-preview destroyer" draggable="true"></div>
+        <div id="1" class="submarine-preview submarine" draggable="true"></div>
+        <div id="2" class="cruiser-preview cruiser" draggable="true"></div>
+        <div
+          id="3"
+          class="battleship-preview battleship"
+          draggable="true"
+        ></div>
+        <div id="4" class="carrier-preview carrier" draggable="true"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
